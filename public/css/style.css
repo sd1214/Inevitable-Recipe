@@ -1,0 +1,35 @@
+body{
+   background:  #29233a56 
+}
+
+.login-container{
+    width: 600px;
+    margin-top:50px;
+    text-align:center;
+} 
+
+.subheading{
+    color:rgb(38, 45, 56);
+    font-weight: 500;
+} 
+.nav-wrapper{
+    background-color:#3f1b92;
+}
+.brand-logo{
+    margin-left:10px
+}
+.hide-on-med-and-down{
+    margin-right:10px
+}
+nav{
+    position: sticky;
+    top:0px;
+    z-index: 1000;
+}
+
+textarea{
+    white-space: pre-wrap;  
+}
+.card-panel{
+    background:rgba(0, 0, 0, 0.918)
+}

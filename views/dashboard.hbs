@@ -1,0 +1,26 @@
+<h6>Dashboard</h6>
+<h3>Welcome {{name}}</h3>
+<h6>Here is your recipes</h6>
+{{#if recipes}}
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each recipes}}
+        <tr>
+            <td><a href="/recipe/{{_id}}">{{title}}</a></td>
+            <td>{{createdAt}}</td>
+            <td>{{status}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<h5>You don't have any recipes to display</h5>
+{{/if}}

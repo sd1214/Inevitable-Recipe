@@ -1,0 +1,21 @@
+<h1>Recipes</h1>
+<div class="row">
+    {{#each recipes}}
+    <div class="col s4">
+        <div class="card center purple darken-3">
+            <div class="card-content white-text">
+                <span class="card-title">{{title}}</span>
+                <div class="chip">
+                    <img src="{{user.image}}" alt="Name">
+                     {{user.displayName}}
+                </div>
+            </div> 
+            <div class="card-action">
+                <a href="/recipe/{{_id}}">Read Recipe</a>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <h3>No Recipes to display</h3>
+    {{/each}}
+</div>

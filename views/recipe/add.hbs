@@ -1,0 +1,29 @@
+<div class="row">
+    <form action="/recipe" method="POST" class="col s12">
+        <div class="row">
+            <h4>Add You Recipe</h4>
+        </div>
+        <div class="row">
+            <div class="input-field col s9">
+                <input id="title" type="text" name="title">
+                <label for="title">Title</label>
+            </div>
+            <div class="input-field col s3">
+                <select id="status" name="status">
+                    <option value="public" selected>Public</option>
+                    <option value="private">Private</option>
+                </select>
+                <label for="status">Status</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="body" name="body" class="materialize-textarea"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="SAVE" class="btn">
+            <a class="btn waves-effect waves-light deep-orange darken-4" href="/dashboard" name="cancel">Cancel</a>
+        </div>
+    </form>
+</div>
